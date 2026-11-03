@@ -1,4 +1,4 @@
-# Ex.No:3a Develop program to create a text field and a button “Navigate”. When you enter “www.gmail.com” and press navigate button it should open google page using Implicit Intents.
+# Ex.No:2a Develop program to create a text field and a button “Navigate”. When you enter “www.gmail.com” and press navigate button it should open google page using Implicit Intents.
 
 
 ## AIM:
@@ -10,7 +10,21 @@ To create a navigate button using Implicit Intent to display the gmail page usin
 Latest Version Android Studio
 
 ## ALGORITHM:
+1. **Start the project:** Create a new Android project in Android Studio.
 
+2. **Design the UI:** In `activity_main.xml`, add an `EditText` (to accept the URL input) and a `Button` (to trigger the navigation).
+
+3. **Initialize components:** In `MainActivity.java`, map the `EditText` and `Button` variables to their respective XML IDs using `findViewById()`.
+
+4. **Set click listener:** Attach an `OnClickListener` to the button to listen for user click events.
+
+5. **Get input:** Inside the `onClick` method, extract the text entered in the `EditText` and convert it to a string.
+
+6. **Create implicit intent:** Instantiate an `Intent` with the action `Intent.ACTION_VIEW` and pass the parsed URL string using `Uri.parse()`.
+
+7. **Start activity:** Call `startActivity(intent)` to trigger the OS to open the webpage in an available web browser.
+
+8. **Stop:** Run and test the application.
 
 
 ## PROGRAM:
